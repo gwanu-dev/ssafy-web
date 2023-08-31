@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <form>
+      <table align="middle" border="1">
+        <tr>
+          <td id="tableHead">이름</td>
+          <td align="left"><input type="text" id="name" name="username"></td>
+        </tr>
+        <tr>
+          <td id="tableHead">아이디</td>
+          <td align="left"><input type="text" id="id" name="userid"><button id="redundantcheck">중복확인</button></td>
+        </tr>
+        <tr>
+          <td id="tableHead">비밀번호</td>
+          <td align="left"><input type="password" id="password" name="userpw"></td>
+        </tr>
+        <tr>
+          <td id="tableHead">비밀번호확인</td>
+          <td align="left"><input type="password" id="passwordcheck" name="userpw"></td>
+        </tr>
+        <tr>
+          <td id="tableHead">성별</td>
+          <td align="left">
+            <input type="radio" name="gender" value="m"> 남
+            <input type="radio" name="gender" value="f" checked="checked"> 여
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">좋아하는 과일</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="fruit" value="사과"> 사과 
+            <input type="checkbox" name="fruit" value="수박" checked="checked"> 수박 
+            <input type="checkbox" name="fruit" value="딸기"> 딸기 
+            <input type="checkbox" name="fruit" value="포도"> 포도
+          </td>
+        </tr>
+        <tr>
+          <td id="tableHead">이메일</td>
+          <td align="left">
+            <input size = 10 type="text" id="email" name="emailid">
+            <b>@</b>
+            <select name="email">
+              <option value="naver.com">네이버</option>
+              <option value="gmail.com">지메일</option>
+              <option value="daum.net">다음</option>
+              <option value="">직접입력</option>
+            </select>
+            <input size=10 type="text" name="mail" id="email">
+          </td>
+        </tr>
+        <tr>
+          <td id="tableHead">연락처</td>
+          <td align="left">
+            <select name="" id="">
+              <option value="031">031</option>
+              <option value="010">010</option>
+              <option value="02">02</option>
+              <option value="070">070</option>
+            </select> -
+            <input size=8 type="text" name="number" id="number" maxlength="4"> -
+            <input size=8 type="text" name="number" id="number" maxlength="4">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" value="회원가입" width="30px">
+            <input type="button" value="초기화"> 
+          </td>
+        </tr>
+      </table>
+    </form> 
+  </body>
+</html>
